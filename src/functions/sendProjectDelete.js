@@ -1,5 +1,6 @@
 export const sendProjectDelete = async (data) => {
-    const ServerUrl = 'http://localhost:8080/portfolio/delete'
+    // const ServerUrl = 'http://localhost:8080/portfolio/delete'
+    const ServerUrl = process.env.REACT_APP_BACKEND_URL 
     try {
         const response = await fetch(ServerUrl, {
             method: 'DELETE',
