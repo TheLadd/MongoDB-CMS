@@ -1,6 +1,5 @@
 export const sendEdit = async ( data ) => {
-    // const ServerURL = 'http://localhost:8080/blog/put'
-    const ServerUrl = process.env.REACT_APP_BACKEND_URL 
+    const ServerURL = process.env.REACT_APP_BACKEND_URL 
     try {
         const response = await fetch(ServerURL, {
             method: 'PUT',

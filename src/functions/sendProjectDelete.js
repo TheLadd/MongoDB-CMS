@@ -1,4 +1,5 @@
 export const sendProjectDelete = async (data) => {
+    console.log(`env var: ${process.env.REACT_APP_BACKEND_URL}`)
     const ServerUrl = process.env.REACT_APP_BACKEND_URL + "portfolio/delete" 
     try {
         const response = await fetch(ServerUrl, {
