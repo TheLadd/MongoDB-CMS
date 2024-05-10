@@ -1,6 +1,6 @@
 export const sendDelete = async ( data ) => {
     // const serverUrl = 'http://localhost:8080/blog/delete'
-    const serverUrl = process.env.REACT_APP_BACKEND_URL + '/blog/delete'
+    const serverUrl = process.env.REACT_APP_BACKEND_URL + 'blog/delete'
     // console.log(`Sending a delete request for ${JSON.stringify(data)}`)
     try {
         const response = await fetch(serverUrl, {

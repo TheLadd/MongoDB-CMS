@@ -1,6 +1,6 @@
 export const sendProject = async ( data ) => {
     // const serverUrl = 'http://localhost:8080/portfolio/post'
-    const serverUrl = process.env.REACT_APP_BACKEND_URL + '/portfolio/post'
+    const serverUrl = process.env.REACT_APP_BACKEND_URL + 'portfolio/post'
     try {
         const response = await fetch(serverUrl, {
             method: 'POST',
