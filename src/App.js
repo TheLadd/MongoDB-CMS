@@ -13,7 +13,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-          {/* <Route path='/' element={<Navigate to="/blog/post" />} /> */}
           <Route path='/' element={ <Navigate to="/portfolio/delete" />} />
 
           <Route path='/blog/post' element={ <PostUpload /> } />
