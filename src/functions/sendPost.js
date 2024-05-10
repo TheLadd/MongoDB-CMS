@@ -1,5 +1,6 @@
 export const sendPost = async ( data ) => {
-    const serverURL = 'http://localhost:8080/blog/post'
+    // const serverURL = 'http://localhost:8080/blog/post'
+    const serverURL = process.env.REACT_APP_BACKEND_URL + '/blog/post' 
     try {
         const response = await fetch(serverURL, {
             method: 'POST',
